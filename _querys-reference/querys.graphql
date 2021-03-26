@@ -1,0 +1,29 @@
+#1 QUERY ALL SONGS AND THE LIST OF LYRICS TO EACH OF THEM
+{
+  {
+    songs {
+      id
+      title
+      lyrics {
+        content
+      }
+    }
+  }
+  #RESULT
+  {
+    "data": {
+      "songs": [
+        {
+          "id": "605df5485d6802522c08f19c",
+          "title": "Cold Night",
+          "lyrics": [
+            {
+              "content": "Oh my oh my its a cold night"
+            }
+          ]
+        }
+      ]
+    }
+  }
+}
+
