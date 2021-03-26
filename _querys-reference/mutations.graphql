@@ -1,0 +1,18 @@
+#1 ADDSONG MUTATION AND RETURN THE ID
+{
+  mutation {
+    addSong(title: "Cold Night") {
+      id
+    }
+  }
+  #RESULT
+  {
+    "data": {
+      "addSong": {
+        "id": "605df5485d6802522c08f19c"
+      }
+    }
+  }
+}
+
+
