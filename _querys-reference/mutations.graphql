@@ -15,4 +15,18 @@
   }
 }
 
-
+#2 ADDLYRICTOSONG MUTATION TO ADD A LYRIC TO THE SONG ADDED EARLIER
+{
+  mutation {
+    addLyricToSong(songId: "605df5485d6802522c08f19c", content: "Oh my oh my its a cold night"){
+      id
+    }
+  }
+  {
+    "data": {
+      "addLyricToSong": {
+        "id": "605df5485d6802522c08f19c"
+      }
+    }
+  }
+}
