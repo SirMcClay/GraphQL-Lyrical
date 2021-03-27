@@ -31,3 +31,26 @@
     }
   }
 }
+
+#3 GRAPHIQL MUTATION WITH QUERY VARIABLES
+{
+  mutation AddSong($title: String) {
+    addSong(title: $title) {
+      id
+      title
+    }
+  }
+  #QUERY VARIABLES
+  {
+    "title": "Sprite vs Coke"
+  }
+  #RESULT
+  {
+    "data": {
+      "addSong": {
+        "id": "605f899537997f650ca88861",
+        "title": "Sprite vs Coke"
+      }
+    }
+  }
+}
