@@ -54,3 +54,24 @@
     }
   }
 }
+
+#4 DELETE MUTATION WITH QUERY VARIABLES
+{
+  mutation DeleteSong($id: ID) {
+    deleteSong(id: $id) {
+      id
+    }
+  }
+  #QUERY VARIABLES
+  {
+  "id": "605f85d437997f650ca88860"
+  }
+  #RESULT
+  {
+    "data": {
+      "deleteSong": {
+        "id": "605f85d437997f650ca88860"
+      }
+    }
+  }
+}
