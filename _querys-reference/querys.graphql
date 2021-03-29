@@ -27,3 +27,25 @@
   }
 }
 
+#2 QUERY A SINGLE SONG USING VARIABLES
+{
+  query SongQuery($id: ID!){
+    song(id: $id){
+      id
+      title
+    }
+  }
+  #VARIABLES
+  {
+    "id": "6061cfd8b09f3b2234c32fa6"
+  }
+  #RESULT
+  {
+    "data": {
+      "song": {
+        "id": "6061cfd8b09f3b2234c32fa6",
+        "title": "Water Boogy"
+      }
+    }
+  }
+}
