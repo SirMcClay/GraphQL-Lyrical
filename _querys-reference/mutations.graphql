@@ -75,3 +75,33 @@
     }
   }
 }
+
+#5 ADD LYRIC TO A SONG WITH QUERY VARIABLES
+{
+  mutation AddLyricToSong($content: String, $songId: ID!){
+    addLyricToSong(content: $content, songId: $songId){
+      id
+      lyrics {
+        content
+      }
+    }
+  }
+  #QUERY VARIABLES
+  {
+    "songId": "6061cfd8b09f3b2234c32fa6",
+    "content": "It was a short day"
+  }
+  #RESULT
+  {
+    "data": {
+      "addLyricToSong": {
+        "id": "6061cfd8b09f3b2234c32fa6",
+        "lyrics": [
+          {
+            "content": "It was a short day"
+          }
+        ]
+      }
+    }
+  }
+}
