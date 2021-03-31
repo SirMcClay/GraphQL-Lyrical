@@ -105,3 +105,26 @@
     }
   }
 }
+
+#6 LIKE A LYRIC WITH QUERY VARIABLES
+{
+  mutation LikeLyric($id: ID) {
+    likeLyric(id: $id) {
+      id
+      likes
+    }
+  }
+  #QUERY VARIABLES
+  {
+    "id": "60646efe51f829323deeeed4"
+  }
+  #RESULT
+  {
+    "data": {
+      "likeLyric": {
+        "id": "60646efe51f829323deeeed4",
+        "likes": 5
+      }
+    }
+  }
+}
